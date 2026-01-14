@@ -1,0 +1,32 @@
+# Configuration files with sensitive data
+includes/config.php
+
+# IDE files
+.vscode/
+. idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+*. swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Uploaded user images (keep placeholder images)
+assets/images/uploads/*
+! assets/images/uploads/.gitkeep
+
+# Database backups (keep schema only)
+sql/backups/
+
+# PHP
+vendor/
+composer.lock
