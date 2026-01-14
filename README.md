@@ -92,7 +92,7 @@ music-online-project/
 │   └── wireframes/
 ├── includes/           # PHP configuration & functions
 │   ├── config. php
-│   ├── db.php
+│   ├── db. php
 │   └── functions.php
 ├── sql/                # Database schema
 │   └── schema.sql
@@ -107,7 +107,7 @@ music-online-project/
 
 ## 📚 Documentation
 
-All project documentation for learning outcomes is available in the `/docs` folder: 
+All project documentation for learning outcomes is available in the `/docs` folder:
 - Requirements & Design Specification
 - Database ER Diagram & Design
 - Site Structure & User Flows
