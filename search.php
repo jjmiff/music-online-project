@@ -58,27 +58,8 @@ try {
 </head>
 <body>
     
-    <!-- Navbar (Simplified Include) -->
-    <?php include 'includes/header.php'; // We should probably create this header file to DRY code ?>
-    
-    <!-- Temporary Inline Navbar if header.php doesn't exist yet -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="index.php"><?php echo SITE_NAME; ?></a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="search.php">Browse</a></li>
-                    <?php if (is_logged_in()): ?>
-                        <li class="nav-item"><a class="nav-link" href="user/dashboard.php">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-                    <?php else: ?>
-                        <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
-                    <?php endif; ?>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <?php include 'includes/header.php'; ?>
 
     <div class="container">
         <div class="row mb-4">

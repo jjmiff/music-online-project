@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 } else {
                     // Register
                     $hash = hash_password($password);
-                    $sql = "INSERT INTO users (username, email, password_hash, user_type, created_at) VALUES (?, ?, ?, ?, NOW())";
+                    $sql = "INSERT INTO users (username, email, password_hash, user_type) VALUES (?, ?, ?, ?)";
                     $stmt = $db->prepare($sql);
                     
                     // Allow 'individual' or 'retailer', default to individual if invalid
