@@ -3,13 +3,13 @@ includes/config.php
 
 # IDE files
 .vscode/
-. idea/
+.idea/
 *.code-workspace
 
 # OS files
 .DS_Store
 Thumbs.db
-*. swp
+*.swp
 *.swo
 *~
 
@@ -22,7 +22,7 @@ Thumbs.db
 
 # Uploaded user images (keep placeholder images)
 assets/images/uploads/*
-! assets/images/uploads/.gitkeep
+!assets/images/uploads/.gitkeep
 
 # Database backups (keep schema only)
 sql/backups/
@@ -30,3 +30,7 @@ sql/backups/
 # PHP
 vendor/
 composer.lock
+
+# Node.js (Exclude if leftovers exist)
+node_modules/
+npm-debug.log
